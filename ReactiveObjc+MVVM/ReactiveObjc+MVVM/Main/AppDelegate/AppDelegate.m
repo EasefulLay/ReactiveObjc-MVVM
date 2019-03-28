@@ -19,8 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    RACCommonMethodVC *homePageVC = [[RACCommonMethodVC alloc] init]; //RAC 常用事件监听例子
-//    ViewController *homePageVC = [[ViewController alloc] init]; //RAC+MVVM 项目实例 调用的微博接口
+//    RACCommonMethodVC *homePageVC = [[RACCommonMethodVC alloc] init]; //RAC 常用事件监听例子
+    ViewController *homePageVC = [[ViewController alloc] init]; //RAC+MVVM 项目实例 调用的微博接口
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:homePageVC];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];

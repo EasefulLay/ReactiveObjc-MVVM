@@ -9,6 +9,7 @@
 #import "HomeListView.h"
 #import "HomeLIstViewModel.h"
 #import "HomeListTableViewCell.h"
+#import "RACCommonMethodVC.h"
 
 static NSString * cellId = @"homeListTableViewCell.h";
 
@@ -119,8 +120,11 @@ static NSString * cellId = @"homeListTableViewCell.h";
 
 //发送视图模型 点击信号
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.homeLIstViewModel.clickSubject sendNext:self.homeLIstViewModel.dataArray[indexPath.row]];
-    
+    //1通过RAC信号传递 跳转控制器 弊端不灵活 mvvm最终又回到了C
+    //[self.homeLIstViewModel.clickSubject sendNext:self.homeLIstViewModel.dataArray[indexPath.row]];
+    //2响应链事件 在视图中跳转控制器 回归mvvm
+    RACCommonMethodVC * commonMethodVC = [[RACCommonMethodVC alloc] init];
+    [self.viewController.navigationController pushViewController:commonMethodVC animated:YES];
 }
 
 

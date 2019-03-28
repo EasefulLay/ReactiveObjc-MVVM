@@ -28,6 +28,7 @@
 
 #import "XQNetWorkUtil.h"
 #import "BaseViewController.h"
+#import "UIView+UIViewController.h"
 
 
 #endif /* PrefixHeader_pch */

@@ -27,6 +27,7 @@
 		96C2E57C224BA89A0018BD08 /* HomeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2E57B224BA89A0018BD08 /* HomeListTableViewCell.m */; };
 		96EE94BA224C6CC500FFA096 /* RACCommonMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE94B9224C6CC500FFA096 /* RACCommonMethodVC.m */; };
 		96EE94C0224C79CA00FFA096 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE94BF224C79CA00FFA096 /* Person.m */; };
+		96EE94C7224CC91E00FFA096 /* UIView+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE94C6224CC91E00FFA096 /* UIView+UIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		96EE94B9224C6CC500FFA096 /* RACCommonMethodVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACCommonMethodVC.m; sourceTree = "<group>"; };
 		96EE94BE224C79CA00FFA096 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		96EE94BF224C79CA00FFA096 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		96EE94C5224CC91E00FFA096 /* UIView+UIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewController.h"; sourceTree = "<group>"; };
+		96EE94C6224CC91E00FFA096 /* UIView+UIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewController.m"; sourceTree = "<group>"; };
 		A272B60C3422C6CD5CE1C48E /* libPods-ReactiveObjc+MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveObjc+MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E142FA16F69DCB82E64222 /* Pods-ReactiveObjc+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjc+MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveObjc+MVVM/Pods-ReactiveObjc+MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		FA5A97030BCC04ABC68D958B /* Pods-ReactiveObjc+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjc+MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveObjc+MVVM/Pods-ReactiveObjc+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -340,6 +343,7 @@
 		96EE94B6224C645E00FFA096 /* Extenslons */ = {
 			isa = PBXGroup;
 			children = (
+				96EE94C4224CC90300FFA096 /* Category */,
 				96C2E548224B67260018BD08 /* NetWorkUtil */,
 			);
 			path = Extenslons;
@@ -354,6 +358,15 @@
 				96EE94BF224C79CA00FFA096 /* Person.m */,
 			);
 			path = "RACCommonMethod（RAC事件监听)";
+			sourceTree = "<group>";
+		};
+		96EE94C4224CC90300FFA096 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				96EE94C5224CC91E00FFA096 /* UIView+UIViewController.h */,
+				96EE94C6224CC91E00FFA096 /* UIView+UIViewController.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		BC0BE11592A4E85E949A0A24 /* Pods */ = {
@@ -543,6 +556,7 @@
 				96C2E565224B9B260018BD08 /* HomeListModel.m in Sources */,
 				96C2E574224B9DF00018BD08 /* HomeListView.m in Sources */,
 				96EE94C0224C79CA00FFA096 /* Person.m in Sources */,
+				96EE94C7224CC91E00FFA096 /* UIView+UIViewController.m in Sources */,
 				96C2E51B224B66500018BD08 /* ViewController.m in Sources */,
 				96EE94BA224C6CC500FFA096 /* RACCommonMethodVC.m in Sources */,
 				96C2E578224BA7F80018BD08 /* BaseTableViewCell.m in Sources */,
